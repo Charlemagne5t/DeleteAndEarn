@@ -10,18 +10,13 @@ public class SolutionTest {
     public void deleteAndEarnTest1() {
         Assert.assertEquals(6, new Solution().deleteAndEarn(new int[]{3, 4, 2}));
     }
-
     @Test
-    public void arrayToMapTest1() {
-        int[] array = {1, 2, 3, 4, 5, 1, 2, 4, 4, 4, 5, 5, 5, 5};
-        Map<Integer, Integer> expected = new HashMap<>();
-        expected.put(1, 2);
-        expected.put(2, 4);
-        expected.put(3, 3);
-        expected.put(4, 16);
-        expected.put(5, 25);
-
-        Assert.assertEquals(expected, new Solution().arrayToMap(array));
+    public void deleteAndEarnTest2() {
+        Assert.assertEquals(9, new Solution().deleteAndEarn(new int[]{2,2,3,3,3,4}));
+    }
+    @Test
+    public void deleteAndEarnTest3() {
+        Assert.assertEquals(18, new Solution().deleteAndEarn(new int[]{1,1,1,2,4,5,5,5,6}));
     }
 }
 
